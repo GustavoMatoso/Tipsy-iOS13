@@ -12,6 +12,7 @@
 		ADB6895C2326708E006D4E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895B2326708E006D4E2B /* Assets.xcassets */; };
 		ADB6895F2326708E006D4E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */; };
 		DF5FE56829D32E2700F5F0FD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FE56729D32E2700F5F0FD /* ResultsViewController.swift */; };
+		DF5FE56C29D4C60A00F5F0FD /* BillCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FE56B29D4C60A00F5F0FD /* BillCalculator.swift */; };
 		DF6A3A6D29D3276B001F7581 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A3A6C29D3276B001F7581 /* CalculateViewController.swift */; };
 		DFC1599629D323C300059889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB689582326708D006D4E2B /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		ADB6895E2326708E006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB689602326708E006D4E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF5FE56729D32E2700F5F0FD /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		DF5FE56B29D4C60A00F5F0FD /* BillCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCalculator.swift; sourceTree = "<group>"; };
 		DF6A3A6C29D3276B001F7581 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,15 +60,32 @@
 		ADB689512326708D006D4E2B /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				DF5FE56A29D4C5AC00F5F0FD /* Model */,
+				DF5FE56929D4C56200F5F0FD /* View */,
+				DFD0DC9729D31F870045A461 /* Controllers */,
 				ADB689522326708D006D4E2B /* AppDelegate.swift */,
 				ADB689542326708D006D4E2B /* SceneDelegate.swift */,
-				DFD0DC9729D31F870045A461 /* Controllers */,
-				ADB689582326708D006D4E2B /* Main.storyboard */,
 				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */,
 				ADB689602326708E006D4E2B /* Info.plist */,
 			);
 			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		DF5FE56929D4C56200F5F0FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB689582326708D006D4E2B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF5FE56A29D4C5AC00F5F0FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FE56B29D4C60A00F5F0FD /* BillCalculator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DFD0DC9729D31F870045A461 /* Controllers */ = {
@@ -149,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5FE56C29D4C60A00F5F0FD /* BillCalculator.swift in Sources */,
 				ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */,
 				DF6A3A6D29D3276B001F7581 /* CalculateViewController.swift in Sources */,
 				ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */,

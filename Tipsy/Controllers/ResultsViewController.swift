@@ -14,18 +14,18 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var settingsLabel: UILabel!
     
-    
-    
-    
-    
-    
+    var splitBill: String?
+    var tip: String?
+    var splitNumber: Int?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if splitBill != nil{
+            totalLabel.text = splitBill
+            settingsLabel.text = "Split between \(splitNumber!), with \(tip!) tip."
+        }
     }
-    
-
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
